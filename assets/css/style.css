@@ -1,0 +1,212 @@
+body{
+    margin: 0%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: "nav nav" "menu main" "footer footer";
+}
+
+nav {
+    background-color: #6ba870;
+    padding: 10px;
+    grid-area: nav;
+    font-family: "Manrope", sans-serif;
+}
+
+.contenedor-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-nav {
+    width: 190px;
+    height: 110;
+}
+
+.menu-navegacion {
+    list-style: none;
+    margin: 0;
+    padding: 3px;
+}
+
+.menu-navegacion li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu-navegacion a {
+    color: #0d5817;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.carrito-compras {
+    margin-right: 10px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.cantidad-carrito {
+    display: inline-block;
+    margin-left: 3px;
+    font-size: 14px;
+}
+
+menu {
+    grid-area: menu;
+    margin: 0%;
+    background-color: #93da95;
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    
+}
+
+aside.menu-lateral {
+    background-color: #b1e98c;
+    width: 100px;
+    position: fixed;
+    top: 30px;
+    left: 0;
+    padding: 0px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.contenedor-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 0px;
+}
+
+.titulo-menu {
+    color: #2f4b28;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.icono-menu {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.categorias {
+    list-style: inside;
+    margin: 0;
+    padding: 0;
+}
+
+.categorias li {
+    margin-bottom: 5px;
+}
+
+.categorias a {
+    color: #496b42;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.categorias a:hover {
+    color: #04411f;
+}
+
+main {
+    grid-area: main;
+    background-color: #e2f0e4;
+}
+
+.productos {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tarjeta {
+    width: 300px;
+    background-color: #7baa7c;
+    box-shadow: 0 3px 5px rgba(2, 78, 21, 0.1);
+    padding: 20px;/
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.tarjeta h3 {
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.tarjeta p {
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
+}
+
+.tarjeta .precio {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.titular {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 600;
+    font-style: initial;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #476e5f;
+    color: #fff;
+    padding: 5px 0;
+    
+}
+  
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .logo-footer {
+    width: 150;
+    height: 120;
+  }
+  
+  .informacion-contacto {
+    text-align: center;
+  }
+  
+  .redes-sociales {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .redes-sociales a {
+    color: #8fe7b7;
+    font-size: 20px;
+  }
+  
+  .redes-sociales i {
+    transition: color 0.3s ease;
+  }
+  
+  .redes-sociales a:hover i {
+    color: #007bff;
+  }
